@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import Welcome from './components/Welcome/Welcome';
 
-function App(): JSX.Element {
-  const [count, setCount] = useState<number>(0);
+function App() {
+  const [count, setCount] = useState(0);
 
   return (
     <Router>
@@ -19,7 +19,7 @@ function App(): JSX.Element {
             </button>
           </p>
           <p>
-            Edit <code>App.tsx</code> and save to test HMR updates.
+            Edit <code>App.jsx</code> and save to test HMR updates.
           </p>
           <p>
             <a
