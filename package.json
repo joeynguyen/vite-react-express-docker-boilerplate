@@ -5,14 +5,14 @@
     "clean": "rimraf dist",
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
     "client:dev": "vite",
-    "server:dev": "nodemon src/server.js",
-    "server:build": "babel --verbose --out-dir dist --only 'src/server.js,src/lib/' src",
+    "server:dev": "nodemon src/server/index.js",
+    "server:build": "babel --verbose --out-dir dist/server src/server",
     "client:build": "vite build",
     "build": "npm run server:build && npm run client:build",
     "serve": "vite preview",
     "prepare": "husky install",
     "test": "prettier --check . && eslint . && stylelint \"**/*.css\"",
-    "start": "node dist/server.js"
+    "start": "node dist/server/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",

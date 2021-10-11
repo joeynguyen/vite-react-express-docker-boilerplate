@@ -10,6 +10,7 @@ const { PORT = 3001 } = process.env;
 export default defineConfig({
   plugins: [react()],
   server: {
+    host: '0.0.0.0',
     proxy: {
       '/api': {
         target: `http://localhost:${PORT}`,
@@ -18,6 +19,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist/app',
+    outDir: 'dist/client',
   },
 });

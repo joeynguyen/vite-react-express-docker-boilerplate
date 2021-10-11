@@ -21,6 +21,8 @@ function App() {
           <p>
             Edit <code>App.jsx</code> and save to test HMR updates.
           </p>
+          {/* Testing env variable - https://vitejs.dev/guide/env-and-mode.html#env-files */}
+          <p>SVG path: {`${import.meta.env.VITE_SVG_PATH}`}</p>
           <p>
             <a
               className={styles['App-link']}

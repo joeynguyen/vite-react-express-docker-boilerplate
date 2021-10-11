@@ -16,28 +16,21 @@ First, [create a repository from this template](https://docs.github.com/en/githu
 Now you are ready to go:
 
 ```shell
-npm install
+docker-compose build
 ```
 
 This will install the dependencies required to run the boilerplate.
 
 ```shell
-npm run dev
+docker-compose up
 ```
 
-Boom! These scripts run your server and client in development mode.
+Boom! The Docker container will run your server and client in development mode.
 
 The default PORTS are:
 
 - `3001` for the server
 - `3000` for the client
-
-If you don't like to call all scripts at once, you can also run:
-
-```shell
-npm run server:dev
-npm run client:dev
-```
 
 You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
 
@@ -47,17 +40,19 @@ You can configure the server port by setting the `PORT` environment variable. Cr
 
 ## Building
 
-To build the project, run:
+To build the Docker image, run:
 
 ```shell
-npm run build
+docker build -t vite-react-express .
 ```
 
-This will build the client and server.
+To run the image locally:
 
 ```shell
-npm start
+docker run --rm  --name vite-react-express -p 3001:3001 vite-react-express:latest
 ```
+
+and navigate to `http://localhost:3001`.
 
 In production, you have a single server serving everything.
 
