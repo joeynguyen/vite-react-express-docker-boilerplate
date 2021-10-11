@@ -3,11 +3,8 @@ services:
   app:
     build: .
     container_name: vite-react-express
-    # nvm is installed and activated via ~/.bashrc, so we need
-    # to execute bash with -l flag to make it behave as if it
-    # was invoked as a login shell and `source ~/.bashrc`
     command: npm run dev
-    image: vite-react-express-client:local
+    image: vite-react-express:latest
     ports:
       - '3000:3000'
       - '3001:3001'

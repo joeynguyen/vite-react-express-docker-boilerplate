@@ -1,11 +1,10 @@
-# Vite React Express Boilerplate
+# Vite React Express Docker Boilerplate
 
 > Quickly bootstrap a new project with Vite React Express Boilerplate.
 
-This boilerplate is a fork of [lmachens/vite-boilerplate](https://github.com/lmachens/vite-boilerplate), but replaces TypeScript with JavaScript and removes Storybook.
+This boilerplate is a fork of [lmachens/vite-boilerplate](https://github.com/lmachens/vite-boilerplate), but replaces TypeScript with JavaScript, adds Docker, and removes Storybook.
 
-This boilerplate contains all the tools you need to build a modern web app with JavaScript, React, Vite, and Express.  
-You can use it to quickly bootstrap your project.
+This boilerplate contains all the tools you need to build a modern web app with Vite, Docker, React, and Express. You can use it to quickly bootstrap your project.
 
 ESLint, stylelint, prettier, husky and lintstaged are configured to give you a solid development experience.
 
@@ -32,7 +31,7 @@ The default PORTS are:
 - `3001` for the server
 - `3000` for the client
 
-You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
+You can configure the server port by setting the `PORT` environment variable in `.env`.
 
 | KEY  | VALUE                                                         |
 | ---- | ------------------------------------------------------------- |

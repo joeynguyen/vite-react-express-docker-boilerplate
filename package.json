@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-express-boilerplate",
+  "name": "vite-react-express-docker-boilerplate",
   "version": "0.0.0",
   "scripts": {
     "clean": "rimraf dist",
